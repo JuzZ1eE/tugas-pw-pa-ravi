@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CACTUS JACK | Travis Scott Edition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,900&family=Inter:wght@400;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cactusBrown: "#4B3832",
+              utopiaGrey: "#1A1A1A",
+              ragerOrange: "#FF4500"
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0d0d0d; }
+        .travis-title { font-family: 'Barlow Condensed', sans-serif; letter-spacing: -2px; }
+        .glitch-border { border: 2px solid #FF4500; box-shadow: 4px -4px 0px #4B3832; }
+    </style>
+</head>
+<body class="text-gray-300">
+
+<header class="bg-utopiaGrey p-16 text-center border-b-4 border-cactusBrown overflow-hidden relative">
+    <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+    <h1 class="travis-title text-7xl md:text-9xl font-black italic text-white leading-none uppercase">
+        UTO<span class="text-ragerOrange">PIA</span>
+    </h1>
+    <p class="mt-4 tracking-[0.5em] text-xs font-black uppercase text-gray-500">Live from Houston | Aldi Hasan Satria</p>
+</header>
+
+<main class="max-w-4xl mx-auto mt-12 p-8 bg-zinc-900/50">
+    <section class="mb-12">
+        <div class="glitch-border overflow-hidden">
+            <img src="https://abcnews4.com/resources/media2/16x9/1164/986/293x182/90/feeee72f-cbea-4bee-8b0d-ab7ae48c96a3-GettyImages2182712179.jpg" 
+                 class="w-full h-[400px] object-cover sepia-[.5] contrast-150 grayscale hover:grayscale-0 transition-all duration-500">
+        </div>
+    </section>
+
+    <article class="space-y-12 mb-20">
+        <section class="border-r-4 border-ragerOrange pr-6 text-right">
+            <h2 class="travis-title text-3xl font-black text-white italic uppercase mb-4">The Rager's Guide</h2>
+            <p class="text-gray-400">Hip Hop lahir di 70-an, tapi Travis membawanya ke dimensi luar angkasa. <span class="text-white font-bold">Autotune as an instrument.</span> Ini bukan cuma musik, ini energi murni.</p>
+        </sectio  n>
+
+        <section class="py-12 border-t border-zinc-800">
+            <h2 class="travis-title text-center text-4xl text-white mb-10 italic uppercase tracking-tighter">The Pantheon</h2>
+            <div class="grid gap-4">
+                <div class="bg-ragerOrange p-6 flex justify-between items-center border-2 border-white">
+                    <span class="travis-title text-2xl text-black">01. TRAVIS SCOTT</span>
+                    <span class="bg-black text-white text-[10px] px-2 py-1 font-black italic uppercase">It's Lit!</span>
+                </div>
+                <a href="kendrick.html" class="group border-2 border-zinc-800 p-6 flex justify-between items-center hover:border-ragerOrange transition-all">
+                    <span class="travis-title text-2xl text-zinc-600 group-hover:text-white transition-colors">02. KENDRICK LAMAR</span>
+                    <span class="text-xl group-hover:translate-x-2 transition-transform text-ragerOrange">→</span>
+                </a>
+                <a href="drake.html" class="group border-2 border-zinc-800 p-6 flex justify-between items-center hover:border-ragerOrange transition-all">
+                    <span class="travis-title text-2xl text-zinc-600 group-hover:text-white transition-colors">03. DRAKE</span>
+                    <span class="text-xl group-hover:translate-x-2 transition-transform text-ragerOrange">→</span>
+                </a>
+            </div>
+        </section>
+    </article>
+</main>
+</body>
+</html>

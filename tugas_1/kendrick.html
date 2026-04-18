@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BOOGEYMAN | Kendrick Blog Edition</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              mustard: "#FFB800", // Kuning ikonik cover Not Like Us
+              westBlue: "#002B5B",
+              comptonBlack: "#0F0F0F"
+            },
+            fontFamily: {
+              montserrat: ["Montserrat", "sans-serif"],
+              mono: ["Space Mono", "monospace"]
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      body { font-family: 'Space Mono', monospace; background-color: #f4f4f4; }
+      .kdot-title { font-family: 'Montserrat', sans-serif; line-height: 0.8; letter-spacing: -4px; }
+      .map-dot {
+        width: 12px;
+        height: 12px;
+        background-color: #FFB800;
+        border-radius: 50%;
+        display: inline-block;
+        box-shadow: 0 0 10px #FFB800;
+      }
+      .stamp-effect {
+        border: 3px solid #002B5B;
+        color: #002B5B;
+        padding: 2px 8px;
+        font-weight: 900;
+        transform: rotate(-10deg);
+        display: inline-block;
+      }
+    </style>
+</head>
+
+<body class="text-comptonBlack">
+
+<header class="bg-mustard p-12 text-center border-b-8 border-comptonBlack relative overflow-hidden">
+    <div class="absolute top-4 left-10 opacity-30 text-4xl">📍</div>
+    <div class="absolute bottom-4 right-10 opacity-30 text-4xl">📍</div>
+    
+    <div class="mb-4">
+        <span class="stamp-effect uppercase text-sm">Certified Boogeyman</span>
+    </div>
+    <h1 class="kdot-title text-7xl md:text-9xl font-black text-comptonBlack uppercase">
+        NOT <br> LIKE <span class="text-white">US.</span>
+    </h1>
+    <p class="mt-6 tracking-widest font-bold bg-comptonBlack text-white inline-block px-4 py-1 uppercase text-xs">
+        Field Report by Aldi Hasan Satria
+    </p>
+</header>
+
+<main class="max-w-4xl mx-auto mt-10 p-6">
+
+    <section class="mb-12">
+        <div class="border-4 border-comptonBlack shadow-[12px_12px_0px_#002B5B] overflow-hidden bg-white">
+            <img src="https://abcnews4.com/resources/media2/16x9/1164/986/293x182/90/feeee72f-cbea-4bee-8b0d-ab7ae48c96a3-GettyImages2182712179.jpg"
+                 alt="Kendrick Lamar"
+                 class="w-full h-[400px] object-cover contrast-125 grayscale hover:grayscale-0 transition-all duration-700">
+            <div class="p-4 bg-comptonBlack text-white flex justify-between items-center italic text-sm">
+                <span>Location: Compton, CA</span>
+                <span class="text-mustard">"WOP WOP WOP WOP WOP"</span>
+            </div>
+        </div>
+    </section>
+
+    <article class="space-y-12">
+        
+        <section class="border-l-8 border-mustard pl-6">
+            <h2 class="font-montserrat text-3xl font-black mb-4 uppercase">The Culture Witness</h2>
+            <p class="leading-relaxed text-gray-700">
+                Hip hop berasal dari jalanan tahun 70-an. Tapi Kendrick ngajarin kita satu hal: <span class="bg-mustard px-1 font-bold italic text-comptonBlack uppercase">You can't buy culture.</span> Ini soal integritas, sejarah, dan siapa yang bener-bener "mewakili" jalanan.
+            </p>
+        </section>
+
+        <section class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white border-2 border-comptonBlack p-6 hover:translate-y-[-5px] transition-transform shadow-[6px_6px_0px_#FFB800]">
+                <h2 class="font-montserrat text-xl font-black mb-4 uppercase text-westBlue italic">Pilar Utama</h2>
+                <ul class="space-y-3 font-bold text-sm">
+                    <li><div class="map-dot mr-2"></div> MC / RAP: Lyrisism First</li>
+                    <li><div class="map-dot mr-2"></div> DJ: The West Coast Sound</li>
+                    <li><div class="map-dot mr-2"></div> BREAKDANCE: Street Energy</li>
+                    <li><div class="map-dot mr-2"></div> GRAFFITI: Visual Truth</li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col justify-center p-6 bg-westBlue text-white">
+                <h2 class="font-montserrat text-xl font-black mb-4 uppercase">Evolution</h2>
+                <p class="text-sm leading-loose italic opacity-90">
+                    "Sometimes you gotta come back and show them." Kendrick membawa hip hop kembali ke akarnya: bercerita tentang realita sosial tanpa filter.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-12 border-t-2 border-comptonBlack">
+            <h2 class="font-montserrat text-center text-3xl font-black mb-10 uppercase italic underline decoration-mustard">
+                The Pantheon
+            </h2>
+            
+            <div class="grid gap-4">
+                <div class="group relative bg-mustard border-4 border-comptonBlack p-6 flex justify-between items-center cursor-default overflow-hidden">
+                    <div class="absolute inset-0 bg-white translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 opacity-20"></div>
+                    <div class="relative z-10 flex items-center gap-4 text-comptonBlack">
+                        <span class="font-black text-2xl italic">01. KENDRICK LAMAR</span>
+                        <span class="bg-comptonBlack text-white text-[10px] px-2 py-1 font-bold italic uppercase">You Are Here</span>
+                    </div>
+                    <span class="relative z-10 font-black text-comptonBlack hidden md:block">COMPTON'S KING</span>
+                </div>
+                
+                <a href="drake.html" class="group relative bg-white border-4 border-gray-200 p-6 flex justify-between items-center transition-all duration-300 hover:border-comptonBlack hover:shadow-[10px_10px_0px_#002B5B]">
+                    <div class="flex items-center gap-4">
+                        <span class="font-black text-2xl italic text-gray-300 group-hover:text-comptonBlack transition-colors">02. DRAKE</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-[10px] font-black opacity-0 group-hover:opacity-100 transition-opacity uppercase text-westBlue">Switch to 6 God Mode</span>
+                        <span class="text-2xl group-hover:translate-x-2 transition-transform">→</span>
+                    </div>
+                </a>
+
+                <a href="travis.html" class="group relative bg-white border-4 border-gray-200 p-6 flex justify-between items-center transition-all duration-300 hover:border-comptonBlack hover:shadow-[10px_10px_0px_#FF0000]">
+                    <div class="flex items-center gap-4">
+                        <span class="font-black text-2xl italic text-gray-300 group-hover:text-comptonBlack transition-colors">03. TRAVIS SCOTT</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-[10px] font-black opacity-0 group-hover:opacity-100 transition-opacity uppercase text-red-600">Enter Utopia</span>
+                        <span class="text-2xl group-hover:translate-x-2 transition-transform">→</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </article>
+
+    <div class="flex flex-col md:flex-row items-center justify-center gap-8 mt-10 pb-20">
+        <button onclick="alert('THEY NOT LIKE US! 🔥🥊')"
+            class="bg-comptonBlack text-white font-black px-12 py-4 rounded-none uppercase italic hover:bg-mustard hover:text-comptonBlack transition-colors duration-300 shadow-[8px_8px_0px_#002B5B]">
+            🔥 RESPECT K-DOT
+        </button>
+
+        <a href="index.html"
+           class="font-black text-xs uppercase tracking-[0.3em] border-b-2 border-comptonBlack pb-1 hover:text-mustard hover:border-mustard transition-all">
+           🏠 Home base
+        </a>
+    </div>
+
+</main>
+
+<footer class="bg-comptonBlack text-white p-10 text-center">
+    <p class="font-montserrat font-black text-xs uppercase tracking-[0.5em] mb-2">Compton to the World</p>
+    <p class="text-[10px] opacity-50 italic">© 2026 DUNIA HIP HOP | ALDI HASAN SATRIA</p>
+</footer>
+
+</body>
+</html>

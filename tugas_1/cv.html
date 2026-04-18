@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTROWORLD CV - Aldi Hasan Satria</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #0d0d0d;
+            background-image: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #0d0d0d 100%);
+            font-family: 'Space Mono', monospace;
+            color: #e5e7eb;
+        }
+
+        .astro-title {
+            font-family: 'Barlow Condensed', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            font-style: italic;
+        }
+
+        .cv-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: rgba(20, 20, 20, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid #333;
+            box-shadow: 0 0 50px rgba(255, 69, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Dekorasi Neon Travis */
+        .cv-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #FF4500, #4B3832, #FF4500);
+        }
+
+        .section-title {
+            color: #FF4500;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-weight: 900;
+            display: inline-block;
+        }
+
+        .cv-photo-main {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 4px solid #FF4500;
+            box-shadow: 8px 8px 0px #4B3832;
+            transition: 0.4s;
+        }
+
+        .cv-photo-main:hover {
+            transform: scale(1.05) rotate(-3deg);
+            box-shadow: 12px 12px 0px #FF4500;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid #222;
+            filter: grayscale(100%) contrast(120%);
+            transition: 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery-img:hover {
+            filter: grayscale(0%) contrast(100%);
+            border-color: #FF4500;
+            transform: translateY(-5px);
+        }
+
+        .btn-back {
+            background: #FF4500;
+            font-family: 'Barlow Condensed', sans-serif;
+            letter-spacing: 2px;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            background: white;
+            color: black;
+            box-shadow: 0 0 20px #FF4500;
+        }
+    </style>
+</head>
+<body class="p-4">
+
+    <div class="cv-container p-8 md:p-12">
+        <div class="flex flex-col md:flex-row gap-10 items-center mb-16">
+            <div class="relative">
+                <img src="/media_tugas_pw/WhatsApp Image 2026-04-18 at 20.14.03 (1).jpeg" class="gallery-img" onclick="alert('Foto 20')">
+                <div class="absolute -bottom-4 -right-4 bg-white text-black text-[10px] font-bold px-2 py-1 uppercase italic">
+                    Top Tier
+                </div>
+            </div>
+            
+            <div class="text-center md:text-left">
+                <h1 class="astro-title text-6xl md:text-8xl text-white leading-none">ALDI HASAN <span class="text-orange-600">SATRIA</span></h1>
+                <p class="text-orange-500 tracking-[0.4em] text-xs font-bold mt-2">CYBERNETIC OPERATOR // MA GRADUATE '24</p>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-10">
+                <section>
+                    <h2 class="section-title astro-title text-xl italic">Profile // 001</h2>
+                    <p class="text-sm leading-loose text-gray-400">
+                        Nama saya <span class="text-white">Aldi Hasan Satria</span>, lulusan MA tahun 2024. Ahli dalam operasional Excel & VS Code. Berpengalaman di OSIS sebagai pengelola acara dan tim kerja. Cepat beradaptasi, disiplin, dan sangat mengutamakan kerapian di setiap lingkungan kerja.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="section-title astro-title text-xl italic">Experience // 002</h2>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex gap-4">
+                            <span class="text-orange-600 font-bold">2012-18</span>
+                            <div>
+                                <h3 class="text-white font-bold uppercase">Cybernetic Computing</h3>
+                                <p class="text-gray-500">OP Warnet Specialist</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="text-orange-600 font-bold">2021-22</span>
+                            <div>
+                                <h3 class="text-white font-bold uppercase">OSIS MA Miftahul Ulum</h3>
+                                <p class="text-gray-500">Team Event Organizer</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="section-title astro-title text-xl italic">Contact // 003</h2>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center gap-3"><i class="fa fa-phone text-orange-600"></i> 082250797557</div>
+                        <div class="flex items-center gap-3"><i class="fa fa-envelope text-orange-600"></i> andre033satria@gmail.com</div>
+                        <div class="flex items-center gap-3"><i class="fa fa-instagram text-orange-600"></i> @aldihsanstria</div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="space-y-10">
+                <section>
+                    <h2 class="section-title astro-title text-xl italic">Education // 004</h2>
+                    <div class="border-l-2 border-zinc-800 pl-4 space-y-4 text-sm">
+                        <div>
+                            <p class="text-white font-bold">MA Miftahul Ulum Anggana</p>
+                            <p class="text-orange-600 italic">IPA Section (2021-2024)</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-400">MTs Miftahul Ulum (2018-2021)</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-400">SD Negeri 005 Anggana (2013-2018)</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="section-title astro-title text-xl italic">Arsenal (Skills)</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-zinc-800 px-3 py-1 text-[10px] uppercase font-bold text-white border border-zinc-700">Time Mgmt</span>
+                        <span class="bg-zinc-800 px-3 py-1 text-[10px] uppercase font-bold text-white border border-zinc-700">VS Code</span>
+                        <span class="bg-zinc-800 px-3 py-1 text-[10px] uppercase font-bold text-white border border-zinc-700">Excel</span>
+                        <span class="bg-zinc-800 px-3 py-1 text-[10px] uppercase font-bold text-white border border-zinc-700">Communication</span>
+                        <span class="bg-zinc-800 px-3 py-1 text-[10px] uppercase font-bold text-white border border-zinc-700">Discipline</span>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="section-title astro-title text-xl italic">Passions</h2>
+                    <ul class="text-sm text-gray-400 italic">
+                        <li>// Music Archives</li>
+                        <li>// Rapid Learning</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <div class="mt-20 border-t border-zinc-800 pt-10">
+            <h2 class="astro-title text-3xl mb-8 italic text-white">The <span class="text-orange-600">Archives</span> (Gallery)</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2">
+                <div class="overflow-hidden bg-black">
+                    <img src="/media_tugas_pw/WhatsApp Image 2026-04-18 at 20.14.02 (2).jpeg" class="gallery-img" onclick="alert('orang dua')">
+                </div>
+                <img src="/media_tugas_pw/WhatsApp Image 2026-04-18 at 20.13.33.jpeg" class="gallery-img" onclick="alert('Foto 1')">
+                <img src="/media_tugas_pw/WhatsApp Image 2026-04-18 at 20.13.59 (2).jpeg" class="gallery-img" onclick="alert('Foto 2')">
+                <img src="/media_tugas_pw/WhatsApp Image 2026-04-18 at 20.13.59 (1).jpeg" class="gallery-img" onclick="alert('Foto 4')">
+                <img src="/media_tugas_pw/WhatsApp Image 2026-04-18 at 20.14.04 (1).jpeg" class="gallery-img" onclick="alert('Foto 5')">
+                <img src="/media_tugas_pw/WhatsApp Image 2026-04-18 at 20.14.01 (1).jpeg" class="gallery-img" onclick="alert('Foto 6')">
+                <img src="/media_tugas_pw/WhatsApp Image 2026-04-18 at 20.14.05.jpeg" class="gallery-img" onclick="alert('Foto 7')">
+                <img src="/media_tugas_pw/WhatsApp Image 2026-04-18 at 20.14.02 (1).jpeg" class="gallery-img" onclick="alert('Foto 8')">
+                <img src="/media_tugas_pw/WhatsApp Image 2026-04-18 at 20.14.03 (2).jpeg" class="gallery-img" onclick="alert('Foto 9')">
+                <img src="/media_tugas_pw/WhatsApp Image 2026-04-18 at 20.14.00.jpeg" class="gallery-img" onclick="alert('Foto 10')">
+                <img src="/media_tugas_pw/WhatsApp Image 2026-04-18 at 20.14.04.jpeg" class="gallery-img" onclick="alert('Foto 11')">
+                <img src="/media_tugas_pw/WhatsApp Image 2026-04-18 at 20.13.59.jpeg" class="gallery-img" onclick="alert('Foto 12')">
+                <img src="/media_tugas_pw/WhatsApp Image 2026-04-18 at 20.14.00 (1).jpeg" class="gallery-img" onclick="alert('Foto 13')">
+                <img src="/media_tugas_pw/WhatsApp Image 2026-04-18 at 20.14.01.jpeg" class="gallery-img" onclick="alert('Foto 14')">
+                <img src="/media_tugas_pw/WhatsApp Image 2026-04-18 at 20.14.00 (2).jpeg" class="gallery-img" onclick="alert('Foto 15')">
+            </div>
+        </div>
+
+        <div class="mt-16 text-center">
+            <a href="index.html" class="btn-back px-10 py-4 font-black uppercase inline-block text-white italic">
+                ⬅ Escape to Base
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

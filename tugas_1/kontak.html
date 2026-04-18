@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOIN THE COVEN | Contact</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { 
+            font-family: 'Space Mono', monospace; 
+            background-color: #0f0f0f; 
+            color: #f4f4f4; 
+            background-image: radial-gradient(#1a1a1a 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        .title-hiphop { font-family: 'Montserrat', sans-serif; text-transform: uppercase; letter-spacing: -2px; }
+        
+        /* Custom Input Styles */
+        input, select, textarea { 
+            background-color: #151515 !important; 
+            border: 1px solid #333 !important; 
+            color: white !important; 
+            width: 100%; 
+            transition: all 0.3s ease;
+        }
+        input:focus, select:focus, textarea:focus { 
+            border-color: #FFB800 !important; 
+            background-color: #1a1a1a !important;
+            outline: none; 
+            box-shadow: 0 0 10px rgba(255, 184, 0, 0.2);
+        }
+        
+        .contact-card { border: 2px solid #333; transition: all 0.3s ease; }
+        .contact-card:hover { border-color: #FFB800; box-shadow: 10px 10px 0px #FFB800; }
+        
+        .label-style { 
+            display: block; 
+            margin-bottom: 6px; 
+            color: #9ca3af; 
+            text-transform: uppercase; 
+            font-size: 10px; 
+            font-weight: 900; 
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+
+<body class="py-10 px-4">
+
+<div class="max-w-5xl mx-auto">
+    
+    <div class="text-center mb-16">
+        <h2 class="title-hiphop text-6xl md:text-8xl font-black mb-2 italic">
+            GET IN <span class="text-yellow-500">TOUCH</span>
+        </h2>
+        <p class="text-xs tracking-[0.6em] text-gray-500 uppercase font-bold">Collabs • Bookings • Respect • 2026</p>
+    </div>
+
+    <div class="grid lg:grid-cols-5 gap-8">
+        
+        <div class="lg:col-span-2 contact-card bg-zinc-900/80 backdrop-blur-sm p-8 flex flex-col justify-between h-full">
+            <div>
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="h-3 w-3 bg-red-600 rounded-full animate-pulse"></div>
+                    <h3 class="title-hiphop text-2xl text-white italic">Admin Dossier</h3>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="group">
+                        <p class="label-style text-yellow-500">Mastermind</p>
+                        <p class="text-xl font-black group-hover:text-yellow-500 transition-colors">ALDI HASAN SATRIA</p>
+                    </div>
+                    
+                    <div>
+                        <p class="label-style text-yellow-500">Direct Signal (Email)</p>
+                        <p class="text-lg font-bold border-b border-zinc-800 pb-2">andre033satria@gmail.com</p>
+                    </div>
+                    
+                    <div>
+                        <p class="label-style text-yellow-500">Frequency (Instagram)</p>
+                        <p class="text-lg font-bold border-b border-zinc-800 pb-2">@aldihsanstria</p>
+                    </div>
+                    
+                    <div>
+                        <p class="label-style text-yellow-500">Encryption (WhatsApp)</p>
+                        <p class="text-lg font-bold border-b border-zinc-800 pb-2">+62 822-5079-7557</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 p-6 border-2 border-dashed border-zinc-800 bg-black/40">
+                <p class="text-xs italic text-gray-400 leading-relaxed uppercase">
+                    "Started from the code, now we're here. Available for music production, web dev, and hip-hop archives."
+                </p>
+            </div>
+        </div>
+
+        <div class="lg:col-span-3 bg-zinc-900 p-8 border-2 border-white shadow-[12px_12px_0px_#1a1a1a]">
+            <h3 class="title-hiphop text-3xl mb-8 text-white italic underline decoration-yellow-500 underline-offset-8">
+                Drop A Verse
+            </h3>
+            
+            <form onsubmit="kirimData(event)" class="text-sm">
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="label-style">Your Street Name</label>
+                        <input type="text" name="nama" placeholder="Who's calling?" required class="p-4 rounded-none">
+                    </div>
+                    <div>
+                        <label class="label-style">Email Address</label>
+                        <input type="email" name="email" placeholder="how-to-reach-you@mail.com" required class="p-4 rounded-none">
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <label class="label-style">The Message / Your Verse</label>
+                    <textarea name="pesan" rows="5" placeholder="Write your thoughts, lyrics, or business inquiries here..." 
+                        class="p-4 rounded-none resize-none" required></textarea>
+                </div>
+
+                <div class="grid grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="label-style">Gender</label>
+                        <select name="jk" class="p-4 rounded-none appearance-none">
+                            <option value="">-- SELECT --</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="label-style">Your Status</label>
+                        <select name="pekerjaan" class="p-4 rounded-none appearance-none">
+                            <option value="">-- CHOOSE --</option>
+                            <option>Artist / Rapper</option>
+                            <option>Producer</option>
+                            <option>Fan / Listener</option>
+                            <option>Dev / Designer</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-10">
+                    <div>
+                        <label class="label-style">Born Date</label>
+                        <input type="date" name="tanggal" class="p-4 rounded-none">
+                    </div>
+                    <div>
+                        <label class="label-style">Attachment (Demo/Pic)</label>
+                        <input type="file" name="file" class="text-[10px] text-gray-500 file:bg-zinc-800 file:text-white file:border-0 file:px-4 file:py-2 file:mr-4 hover:file:bg-yellow-500 hover:file:text-black transition">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <button type="submit"
+                        class="bg-yellow-500 hover:bg-white text-black font-black py-4 rounded-none transition-all uppercase italic text-lg shadow-[4px_4px_0px_#cc9400] active:translate-y-1">
+                        Transmit
+                    </button>
+                    <button type="reset"
+                        class="border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white font-bold py-4 rounded-none transition-all uppercase italic text-sm">
+                        Clear Log
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="mt-20 text-center pb-10">
+        <a href="index.html" class="group inline-flex items-center gap-4">
+            <span class="h-[2px] w-12 bg-zinc-800 group-hover:w-20 group-hover:bg-yellow-500 transition-all"></span>
+            <span class="text-xs uppercase tracking-[0.5em] text-gray-600 group-hover:text-white transition-colors">Return to Base</span>
+            <span class="h-[2px] w-12 bg-zinc-800 group-hover:w-20 group-hover:bg-yellow-500 transition-all"></span>
+        </a>
+    </div>
+
+</div>
+
+<script>
+function kirimData(event){
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const nama = formData.get('nama');
+    
+    // Aesthetic alert
+    alert("⚡ SIGNAL TRANSMITTED! \n\nWASSUP " + (nama ? nama.toUpperCase() : "GUEST") + ", WE'VE RECEIVED YOUR MESSAGE. STAY TUNED.");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>WLR | THE VAMP BLOG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              vamp: "#000000",
+              blood: "#ff0000", // Red khas Whole Lotta Red
+              ash: "#1a1a1a"
+            },
+            fontFamily: {
+              orbitron: ["Orbitron", "sans-serif"],
+              poppins: ["Poppins", "sans-serif"]
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .wlr-title { font-family: 'Orbitron', sans-serif; text-transform: uppercase; letter-spacing: -2px; }
+        .card-vamp { border: 1px solid #333; transition: all 0.3s ease; }
+        .card-vamp:hover { border-color: #ff0000; box-shadow: 0 0 20px rgba(255, 0, 0, 0.3); }
+        ::selection { background: #ff0000; color: #fff; }
+    </style>
+</head>
+
+<body class="bg-vamp text-gray-200">
+
+    <header class="relative h-[70vh] flex items-center justify-center overflow-hidden border-b-8 border-blood">
+        <div class="absolute inset-0 z-0">
+            <img src="https://wallpapercave.com/wp/wp15363807.jpg" class="w-full h-full object-cover opacity-30 grayscale">
+            <div class="absolute inset-0 bg-blood/10 mix-blend-multiply"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4">
+            <h1 class="wlr-title text-7xl md:text-9xl font-black italic text-white mb-2 leading-none">
+                WHOLE <br> LOTTA <span class="text-blood">RED</span>
+            </h1>
+            <p class="text-lg md:text-xl font-bold tracking-[0.5em] uppercase mb-6 text-blood">Opium Culture • 2026</p>
+            <div class="inline-block bg-white text-black px-6 py-1 font-black italic">
+                ALDI HASAN SATRIA | 24 A
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-6xl mx-auto -mt-16 relative z-20 px-4">
+        <div class="grid md:grid-cols-3 gap-6 text-center">
+
+            <div class="card-vamp bg-ash p-8 rounded-none">
+                <h2 class="font-orbitron text-blood text-2xl mb-2">01. THE BLOG</h2>
+                <p class="text-gray-500 mb-6 italic text-xs uppercase tracking-widest">Street Journals & Rhymes</p>
+                <button onclick="window.location.href='drake.html'" 
+                class="w-full border border-white py-2 font-bold hover:bg-white hover:text-black transition uppercase tracking-tighter">
+                    Read Blog
+                </button>
+            </div>
+
+            <div class="card-vamp bg-ash p-8 rounded-none border-t-4 border-t-blood">
+                <h2 class="font-orbitron text-white text-2xl mb-2">02. DOSSIER</h2>
+                <p class="text-gray-500 mb-6 italic text-xs uppercase tracking-widest">About the Artist</p>
+                <button onclick="window.location.href='cv.html'" class="w-full bg-blood text-white py-2 font-bold hover:brightness-125 transition uppercase tracking-tighter">
+                    View CV
+                </button>
+            </div>
+
+            <div class="card-vamp bg-ash p-8 rounded-none">
+                <h2 class="font-orbitron text-blood text-2xl mb-2">03. CONTACT</h2>
+                <p class="text-gray-500 mb-6 italic text-xs uppercase tracking-widest">Join the Coven</p>
+                <button onclick="window.location.href='kontak.html'" 
+                class="w-full bg-zinc-800 border border-zinc-700 py-2 font-bold hover:bg-zinc-700 transition uppercase tracking-tighter">
+                    Hit Me Up
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto py-20 text-center border-y border-zinc-900 my-10">
+        <h2 class="font-orbitron text-3xl mb-8 tracking-tighter">HYPE <span class="text-blood">METER++</span></h2>
+        <div class="flex items-center justify-center gap-10 mb-8">
+            <button id="kurang" class="text-5xl text-zinc-700 hover:text-blood transition"> - </button>
+            <span id="nomor" class="text-8xl font-black text-white italic underline decoration-blood">0</span>
+            <button id="tambah" class="text-5xl text-blood hover:scale-125 transition"> + </button>
+        </div>
+        <div id="gifContainer" class="mt-6 flex justify-center min-h-[250px]"></div>
+    </section>
+
+    <main class="max-w-6xl mx-auto px-4 pb-20">
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+            
+            <div class="space-y-12">
+                <div class="border-l-4 border-blood pl-6">
+                    <h3 class="text-blood font-orbitron text-2xl mb-4 italic">ABOUT HIP HOP</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm uppercase">
+                        Hip hop adalah bentuk ekspresi paling murni dari jalanan. Dari Bronx hingga <span class="text-white font-bold italic">Antagonis Aesthetic</span>.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-orbitron text-2xl mb-6">THE 4 ELEMENTS</h3>
+                    <ul class="space-y-4 font-black italic text-xl tracking-tighter">
+                        <li class="flex items-center gap-4 hover:text-blood transition cursor-default group">
+                            <span class="bg-blood text-black px-2 text-sm not-italic group-hover:bg-white">01</span> MCING / RAP
+                        </li>
+                        <li class="flex items-center gap-4 hover:text-blood transition cursor-default group">
+                            <span class="bg-blood text-black px-2 text-sm not-italic group-hover:bg-white">02</span> DJING
+                        </li>
+                        <li class="flex items-center gap-4 hover:text-blood transition cursor-default group">
+                            <span class="bg-blood text-black px-2 text-sm not-italic group-hover:bg-white">03</span> BREAKDANCE
+                        </li>
+                        <li class="flex items-center gap-4 hover:text-blood transition cursor-default group">
+                            <span class="bg-blood text-black px-2 text-sm not-italic group-hover:bg-white">04</span> GRAFFITI
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-ash p-2 border border-zinc-800 shadow-[10px_10px_0px_#ff0000]">
+                <iframe class="w-full h-[350px] grayscale brightness-75 hover:grayscale-0 transition duration-1000"
+                    src="https://www.youtube.com/embed/RHCA5b9TkVg"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+        </div>
+
+        <div class="mt-32">
+            <h2 class="font-orbitron text-3xl text-white mb-8 italic tracking-tighter border-b-2 border-blood inline-block">GOAT DISCOGRAPHY</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse border border-zinc-900">
+                    <thead class="bg-blood text-white font-orbitron text-sm">
+                        <tr>
+                            <th class="p-4 border border-zinc-800 uppercase italic">Rapper</th>
+                            <th class="p-4 border border-zinc-800 uppercase italic">Iconic Album</th>
+                            <th class="p-4 border border-zinc-800 uppercase italic">Energy Level</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-xs uppercase font-bold tracking-widest">
+                        <tr class="hover:bg-zinc-900 border-b border-zinc-900 transition">
+                            <td class="p-5 text-white">Travis Scott</td>
+                            <td class="p-5 text-gray-400">ASTROWORLD</td>
+                            <td class="p-5 text-blood">MAXIMUM</td>
+                        </tr>
+                        <tr class="hover:bg-zinc-900 border-b border-zinc-900 transition">
+                            <td class="p-5 text-white">Playboi Carti</td>
+                            <td class="p-5 text-gray-400">Whole Lotta Red</td>
+                            <td class="p-5 text-blood">VAMP MODE</td>
+                        </tr>
+                        <tr class="hover:bg-zinc-900 border-b border-zinc-900 transition">
+                            <td class="p-5 text-white">A$AP Rocky</td>
+                            <td class="p-5 text-gray-400">AT.LONG.LAST.A$AP</td>
+                            <td class="p-5 text-blood">ELEVATED</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="mt-24 p-10 bg-ash border-4 border-double border-zinc-800 text-center relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-2 text-[10px] text-zinc-700 font-black">2026 OPIUM INC.</div>
+            <h3 class="font-orbitron text-2xl text-white mb-2 italic">DROP YOUR MIXTAPE</h3>
+            <p class="text-gray-500 text-[10px] mb-8 tracking-[0.3em] uppercase">We only listen to the underground.</p>
+            
+            <div class="flex flex-col md:flex-row gap-0 justify-center">
+                <input type="text" id="linkMp3" placeholder="https://soundcloud.com/vamp-link..." 
+                class="bg-black border border-zinc-800 px-6 py-3 text-blood focus:outline-none focus:border-blood md:w-2/3 text-sm">
+                
+                <button onclick="dropLink()" 
+                class="bg-blood text-white font-black px-10 py-3 hover:bg-white hover:text-black transition uppercase text-sm italic">
+                    SUBMIT
+                </button>
+            </div>
+            <div id="statusMsg" class="mt-6 text-xs font-black uppercase tracking-[0.2em]"></div>
+        </div>
+
+        <div class="mt-20 text-center">
+            <button onclick="alert('SLATT! 🦋')" class="group relative px-12 py-4 font-black bg-white text-black uppercase overflow-hidden italic">
+                <span class="relative z-10">SHOW RESPECT</span>
+                <div class="absolute inset-0 bg-blood translate-y-full group-hover:translate-y-0 transition-transform"></div>
+            </button>
+        </div>
+    </main>
+
+    <footer class="bg-vamp py-16 text-center border-t border-zinc-900">
+        <p class="font-orbitron tracking-[1em] text-[10px] text-zinc-600">
+            STAY VAMP © 2026 | ANTIX-SOCIAL CLUB
+        </p>
+    </footer>
+
+<script>
+    let number = document.getElementById("nomor");
+    let btnTambah = document.getElementById("tambah");
+    let btnKurang = document.getElementById("kurang");
+    let gifContainer = document.getElementById("gifContainer");
+
+    let count = 0;
+
+    function tampilkanGif() {
+        let gifHTML = "";
+        // Kita pakai filter grayscale dan sepia merah agar masuk ke tema
+        const style = "h-64 border-2 border-blood grayscale hover:grayscale-0 transition duration-500 shadow-[0_0_30px_#ff0000]";
+        if (count >= 10) {
+            gifHTML = `<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ20zN2NyN3U1Z2Z1Y283NzV2bWdvZ3hkdmpoYnFmMzBseWM4dTFwcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MFVXn1fmymn0x8H5XH/giphy.gif" class="${style}">`;
+        } else if (count >= 5) {
+            gifHTML = `<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3JpazVzamljZXhvY3o2ZG9pNzQ3Nml6MWJ5N3g0d3dlZHBybmJuYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2eqzSenHzJxHqcjR3u/giphy.gif" class="${style}">`;
+        } else if (count >= 3) {
+            gifHTML = `<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHFmb2d0b2kydXh6dzdnajRsYWU3eXBvdmF2NTVub3Z6NjZ0NnZ4MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l4FsmjwotC2suVMSk/giphy.gif" class="${style}">`;
+        }
+        gifContainer.innerHTML = gifHTML;
+    }
+
+    btnTambah.addEventListener("click", () => { count++; number.innerText = count; tampilkanGif(); });
+    btnKurang.addEventListener("click", () => { count--; number.innerText = count; tampilkanGif(); });
+
+    function dropLink() {
+        let link = document.getElementById("linkMp3").value;
+        let msg = document.getElementById("statusMsg");
+        
+        if(link.trim() !== "") {
+            msg.innerText = "++ LINK RECEIVED. SLATT! ++";
+            msg.style.color = "#ff0000"; 
+            document.getElementById("linkMp3").value = "";
+        } else {
+            msg.innerText = "!! INPUT IS EMPTY. DON'T BE A CLONE. !!";
+            msg.style.color = "#ffffff";
+        }
+    }
+</script>
+
+</body>
+</html>
